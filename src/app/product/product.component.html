@@ -1,0 +1,10 @@
+<div class="input-form">
+  <form (ngSubmit)="onAddProd(f)" #f="ngForm">
+    <input type="text" ngModel name="ProductName"/>
+    <button type="submit">Add Product</button>
+  </form>
+
+  <div *ngFor="let product of products">
+    {{products}}
+  </div>
+</div>
